@@ -1,6 +1,6 @@
 from django.urls import path
 
-from users.views import login, registration, profile, logout
+from users.views import login, logout, profile, registration
 
 app_name = 'users'
 
@@ -10,4 +10,3 @@ urlpatterns = [
     path('profile/', profile, name='profile'),
     path('logout/', logout, name='logout'),
 ]
- 
